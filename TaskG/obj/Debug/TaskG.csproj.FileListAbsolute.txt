@@ -1,0 +1,7 @@
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskG\bin\Debug\TaskG.exe.config
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskG\bin\Debug\TaskG.exe
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskG\bin\Debug\TaskG.pdb
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskG\obj\Debug\TaskG.csproj.CoreCompileInputs.cache
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskG\obj\Debug\TaskG.exe
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskG\obj\Debug\TaskG.pdb
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskG\obj\Debug\TaskG.csprojAssemblyReference.cache

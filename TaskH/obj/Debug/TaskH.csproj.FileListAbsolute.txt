@@ -1,0 +1,7 @@
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskH\bin\Debug\TaskH.exe.config
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskH\bin\Debug\TaskH.exe
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskH\bin\Debug\TaskH.pdb
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskH\obj\Debug\TaskH.csproj.CoreCompileInputs.cache
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskH\obj\Debug\TaskH.exe
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskH\obj\Debug\TaskH.pdb
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskH\obj\Debug\TaskH.csprojAssemblyReference.cache
