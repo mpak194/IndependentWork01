@@ -1,0 +1,7 @@
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskD\bin\Debug\TaskD.exe.config
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskD\bin\Debug\TaskD.exe
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskD\bin\Debug\TaskD.pdb
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskD\obj\Debug\TaskD.csprojAssemblyReference.cache
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskD\obj\Debug\TaskD.csproj.CoreCompileInputs.cache
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskD\obj\Debug\TaskD.exe
+C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskD\obj\Debug\TaskD.pdb
