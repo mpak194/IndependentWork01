@@ -13,7 +13,7 @@ namespace TaskC
         static int InputIntValue(string inputSting, out bool checkNumber)
         {
             int number;
-            if(int.TryParse(inputSting, out number))
+            if (int.TryParse(inputSting, out number))
             {
                 checkNumber = true;
                 return number;
@@ -30,7 +30,7 @@ namespace TaskC
         /// <param name="answer">Строка, куда сохраняется результат</param>
         static void ConvertTensToRome(int number, ref string answer)
         {
-            switch(number)
+            switch (number)
             {
                 case 0:
                     break;
@@ -118,19 +118,21 @@ namespace TaskC
 
         static void Main(string[] args)
         {
+
+
             bool checkNumber;
             // Ввод значений.
             int number = InputIntValue(Console.ReadLine(), out checkNumber);
 
 
             // Проверка допустимых значений.
-            if(checkNumber && number >= 1 && number <= 100)
+            if (checkNumber && number >= 1 && number <= 100)
             {
                 // Нахождение числа десятка и единиц числа.
                 int tensNumber, onesNumber;
                 onesNumber = number % 10;
                 tensNumber = number / 10;
-                
+
                 // Преобразование в римскую СС.
                 string answer = string.Empty;
                 ConvertTensToRome(tensNumber, ref answer);

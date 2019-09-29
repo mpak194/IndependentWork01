@@ -14,7 +14,7 @@ namespace TaskA
         {
             int intValue;
             checkValue = false;
-            if(int.TryParse(inputString, out intValue))
+            if (int.TryParse(inputString, out intValue))
             {
                 checkValue = true;
                 return intValue;
@@ -52,10 +52,10 @@ namespace TaskA
             // Ввод значений.
             int firstValue = InputIntValue(Console.ReadLine(), out checkFirstValue);
             int secondValue = InputIntValue(Console.ReadLine(), out checkSecondValue);
-            
+
 
             // Проверка на успешное преобразование.
-            if(checkFirstValue && checkSecondValue)
+            if (checkFirstValue && checkSecondValue)
             {
                 // Обмен значений.
                 SwapIntValue(ref firstValue, ref secondValue);

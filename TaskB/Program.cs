@@ -4,8 +4,7 @@ namespace TaskB
 {
     class Program
     {
-        // Если в задаче написано, что подается точно 4хзначное число, прога прошла пре-тесты, потом попала в руки ассисту
-        // и он ввел не 4хзначное число, то что??
+
 
         /// <summary>
         /// Метод для ввода целочисленных значений
@@ -32,19 +31,12 @@ namespace TaskB
         /// <returns>Булевое значение, является ли число симметричным или нет</returns>
         static bool IsSymmetryNumber(int number)
         {
-            /* Для того чтобы четырехзначное число было симметричным 
-            разность сумм 1,2 и 3,4 цифр должна равняться 0 */
 
-            int sum = 0;
-            sum += number % 10;
-            number /= 10;
-            sum += number % 10;
-            number /= 10;
-            sum -= number % 10;
-            number /= 10;
-            sum -= number % 10;
+            string stringNumber = number.ToString();
 
-            return sum == 0;
+
+            return stringNumber[0] - stringNumber[3] == 0 && stringNumber[1] - stringNumber[2] == 0;
+
         }
 
 
