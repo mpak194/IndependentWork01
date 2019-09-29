@@ -1,11 +1,12 @@
 ﻿using System;
+using System;
 
 namespace TaskD
 {
     class Program
     {
 
-        
+
 
         /// <summary>
         /// Метод считывания целочисленных значений
@@ -16,7 +17,7 @@ namespace TaskD
         static int InputIntValue(string inputString, out bool checkNumber)
         {
             int number;
-            if(int.TryParse(inputString, out number))
+            if (int.TryParse(inputString, out number) && number > 0)
             {
                 checkNumber = true;
                 return number;
@@ -71,8 +72,7 @@ namespace TaskD
             int hypotSquare = TriangeLenArray[2] * TriangeLenArray[2];
             int cathetsSquare = TriangeLenArray[0] * TriangeLenArray[0] + TriangeLenArray[1] * TriangeLenArray[1];
 
-            answer = hypotSquare < cathetsSquare ? "acute" : "obtuse";
-            answer = hypotSquare == cathetsSquare ? "right" : "right";
+            answer = hypotSquare == cathetsSquare ? "right" : hypotSquare < cathetsSquare ? "acute" : "obtuse";
 
             return answer;
         }
@@ -96,15 +96,18 @@ namespace TaskD
 
         static void Main(string[] args)
         {
-            bool checkFirstTriangeLen, checkSecondTriangleLen, checkThirdTriangeLen;
+            bool checkFirstTriangleLen, checkSecondTriangleLen, checkThirdTriangleLen;
 
             // Ввод значений.
-            int firstTriangeLen = InputIntValue(Console.ReadLine(), out checkFirstTriangeLen);
+            int firstTriangeLen = InputIntValue(Console.ReadLine(), out checkFirstTriangleLen);
+
             int secondTriangeLen = InputIntValue(Console.ReadLine(), out checkSecondTriangleLen);
-            int thirdTriangeLen = InputIntValue(Console.ReadLine(), out checkThirdTriangeLen);
+
+            int thirdTriangeLen = InputIntValue(Console.ReadLine(), out checkThirdTriangleLen);
+
 
             // Проверка значений на преобразование в int.
-            if (checkFirstTriangeLen && checkSecondTriangleLen && checkSecondTriangleLen)
+            if (checkFirstTriangleLen && checkSecondTriangleLen && checkThirdTriangleLen)
             {
                 string answer;
 
@@ -117,8 +120,8 @@ namespace TaskD
             // Вывод ошибки.
             else Console.WriteLine("wrong");
 
-            Console.ReadLine();
 
+            Console.ReadKey();
         }
     }
 }

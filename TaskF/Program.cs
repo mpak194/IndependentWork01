@@ -15,7 +15,7 @@ namespace TaskF
         static int InputIntValue(string inputString, out bool checkValue)
         {
             int number;
-            if(int.TryParse(inputString, out number))
+            if (int.TryParse(inputString, out number))
             {
                 checkValue = true;
                 return number;
@@ -44,6 +44,28 @@ namespace TaskF
         }
 
 
+        /// <summary>
+        /// Метод подсчета геометрической прогрессии
+        /// </summary>
+        /// <param name="baseSeq">Основание прогрессии</param>
+        /// <param name="degreeSeq">Степень</param>
+        /// <returns>Сумма прогрессии</returns>
+        static double CountSumSeq(double baseSeq, int degreeSeq)
+        {
+            double sumSeq = 0;
+
+            // Подсчет прогрессии.
+            for (int i = 0; i <= degreeSeq; i++)
+            {
+                sumSeq += Math.Pow(baseSeq, i);
+            }
+
+            return sumSeq;
+        }
+
+
+
+
         static void Main(string[] args)
         {
             bool checkBaseSeq, checkDegreeSeq;
@@ -54,24 +76,20 @@ namespace TaskF
 
 
             // Проверка значений.
-            if (checkBaseSeq && checkDegreeSeq)
+            if (checkBaseSeq && checkDegreeSeq && degreeSeq >= 0)
             {
                 // Подсчет суммы последовательности.
-                double sumSeq = 0;
-                for (int i = 0; i <= degreeSeq; i++)
-                {
-                    sumSeq += Math.Pow(baseSeq, i);
-                }
+                double sumSeq = CountSumSeq(baseSeq, degreeSeq);
 
                 // Вывод суммы последовательности.
-                Console.WriteLine($"{sumSeq:#.###}");
+                Console.WriteLine($"{sumSeq:0.###}");
             }
             // Вывод ошибки.
             else Console.WriteLine("wrong");
 
 
+
             Console.ReadLine();
-   
 
         }
     }

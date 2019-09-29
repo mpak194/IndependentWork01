@@ -15,7 +15,7 @@ namespace TaskE
         static int InputIntValue(string inputString, out bool checkNumValue)
         {
             int number;
-            if(int.TryParse(inputString, out number))
+            if (int.TryParse(inputString, out number))
             {
                 checkNumValue = true;
                 return number;
@@ -77,7 +77,7 @@ namespace TaskE
             Console.ReadLine();
 
 
-            
+
         }
     }
 }
