@@ -15,7 +15,7 @@ namespace TaskH
         static int InputIntValue(string inputString, out bool checkValue)
         {
             int number;
-            if(int.TryParse(inputString, out number))
+            if (int.TryParse(inputString, out number))
             {
                 checkValue = true;
                 return number;
@@ -30,7 +30,7 @@ namespace TaskH
         /// Метод определения элементов суммы кубов
         /// </summary>
         /// <param name="number">Сумма кубов</param>
-        static void GetSumCubs (int number)
+        static void GetSumCubs(int number)
         {
             // Массив для хранения элементов суммы.
             int[] CubsValueArray = new int[2];
@@ -42,7 +42,7 @@ namespace TaskH
             bool isHave = false;
 
             // Поиск.
-            for (int i = 1; i <= limit; i++)
+            for (int i = 0; i <= limit; i++)
             {
                 for (int j = 0; j <= limit; j++)
                 {
@@ -53,7 +53,7 @@ namespace TaskH
                         isHave = true;
                         break;
                     }
-                    
+
                 }
                 if (isHave) break;
             }
@@ -62,7 +62,7 @@ namespace TaskH
             Array.Sort(CubsValueArray);
 
             // Вывод ответа.
-            if(isHave) Console.WriteLine($"{CubsValueArray[1]} {CubsValueArray[0]}");
+            if (isHave) Console.WriteLine($"{CubsValueArray[1]} {CubsValueArray[0]}");
             else Console.WriteLine("impossible");
 
         }
@@ -78,7 +78,7 @@ namespace TaskH
             int number = InputIntValue(Console.ReadLine(), out checkNumber);
 
             // Проверка значений.
-            if (checkNumber && number > 0 && number < 1029)
+            if (checkNumber && number >= 0 && number <= 1028)
             {
                 // Поиск элементов суммы кубов и вывод результата.
                 GetSumCubs(number);

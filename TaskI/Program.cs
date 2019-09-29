@@ -43,8 +43,12 @@ namespace TaskI
                     isDegree = true;
                     break;
                 }
-                
+
             }
+
+
+
+
 
             // Вывод результата.
             if (isDegree) Console.WriteLine("YES");
@@ -62,7 +66,7 @@ namespace TaskI
             int number = InputIntValue(Console.ReadLine(), out checkNumber);
 
             // Проверка значений.
-            if (checkNumber)
+            if (checkNumber && number >= 0)
             {
                 // Проверка числа на степень двойки и вывод результата.
                 IsDegreeTwo(number);

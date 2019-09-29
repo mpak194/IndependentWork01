@@ -5,3 +5,10 @@ C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskJ\obj\Debug\Task
 C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskJ\obj\Debug\TaskJ.exe
 C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskJ\obj\Debug\TaskJ.pdb
 C:\Users\Марк\Desktop\Solutions\IW_1\Constest(21.09.19)\TaskJ\obj\Debug\TaskJ.csprojAssemblyReference.cache
+C:\Users\Марк\Desktop\Solutions\IW01\Contest(21.09.19)\TaskJ\bin\Debug\TaskJ.exe.config
+C:\Users\Марк\Desktop\Solutions\IW01\Contest(21.09.19)\TaskJ\bin\Debug\TaskJ.exe
+C:\Users\Марк\Desktop\Solutions\IW01\Contest(21.09.19)\TaskJ\bin\Debug\TaskJ.pdb
+C:\Users\Марк\Desktop\Solutions\IW01\Contest(21.09.19)\TaskJ\obj\Debug\TaskJ.csprojAssemblyReference.cache
+C:\Users\Марк\Desktop\Solutions\IW01\Contest(21.09.19)\TaskJ\obj\Debug\TaskJ.csproj.CoreCompileInputs.cache
+C:\Users\Марк\Desktop\Solutions\IW01\Contest(21.09.19)\TaskJ\obj\Debug\TaskJ.exe
+C:\Users\Марк\Desktop\Solutions\IW01\Contest(21.09.19)\TaskJ\obj\Debug\TaskJ.pdb

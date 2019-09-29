@@ -15,7 +15,7 @@ namespace TaskG
         static int InputIntValue(string inputString, out bool checkValue)
         {
             int number;
-            if(int.TryParse(inputString, out number))
+            if (int.TryParse(inputString, out number))
             {
                 checkValue = true;
                 return number;
@@ -42,6 +42,23 @@ namespace TaskG
         }
 
 
+        /// <summary>
+        /// Метод вычисления выражения 1 + 1/1! + 1/2! + ... + 1/n!
+        /// </summary>
+        /// <param name="number">Число n</param>
+        /// <returns>Сумма выражения</returns>
+        static double CountSeq(int number)
+        {
+            double sumSeq = 0;
+
+            // Подсчет прогрессии.
+            for (int i = 0; i <= number; i++)
+            {
+                sumSeq += 1 / FindFactorial(i);
+            }
+            return sumSeq;
+        }
+
 
         static void Main(string[] args)
         {
@@ -52,20 +69,19 @@ namespace TaskG
             int number = InputIntValue(Console.ReadLine(), out checkNumber);
 
             // Проверка значений.
-            if (checkNumber)
+            if (checkNumber && number >= 0)
             {
-                double sumSeq = 1;
-                for (int i = 1; i <= number; i++)
-                {
-                    sumSeq += 1 / FindFactorial(i);
-                }
-                Console.WriteLine($"{sumSeq:#.#####}");
+                // Вычисление выражения. 
+                double sumSeq = CountSeq(number);
+
+                // Вывод результата.
+                Console.WriteLine($"{sumSeq:0.#####}");
             }
             // Вывод ошибки.
             else Console.WriteLine("wrong");
 
-            Console.ReadLine();
 
+            Console.ReadLine();
         }
     }
 }

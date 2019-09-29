@@ -31,7 +31,7 @@ namespace TaskJ
         /// Метод определения номера числа Фибоначчи
         /// </summary>
         /// <param name="number">Проверяемое число</param>
-        static void GetFibNumber (int number)
+        static void GetFibNumber(int number)
         {
             // Индикатор определения числа Фибоначчи.
             bool isFib = false;
